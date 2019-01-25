@@ -1,0 +1,526 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+                          margin: 0;
+                          padding: 0;
+                          border: 0;
+                          font-size: 100%;
+                          font: inherit;
+                          vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+                                            display: block;
+}
+
+body {
+      line-height: 1;
+}
+
+blockquote, q {
+               quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+                   content: '';
+                   content: none;
+}
+
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+strong {
+        font-weight: 400;
+}
+
+cite, em {
+          font-style: italic;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+      background: #fff;
+      color: #3f3f3f;
+      font-family: 'Raleway', sans-serif;
+}
+
+/*
+  ========================================
+  Grid Layout -
+  to select every imaginable element and change the box-sizing to border-box
+  (padding, borders will not change the actual size of the box)
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+}
+
+.container {
+            margin: 0 auto;
+            width: 960px;
+            padding-left: 30px;
+            padding-right: 30px;
+}
+
+/*
+  ========================================
+  Typography Style
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+                   margin-bottom: 22px;
+}
+
+h1 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 6px 10px #000;
+}
+
+h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 60px;
+    color: #2f2f2f;
+    margin-top: 80px;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 30px;
+}
+
+span {
+     font-weight: bold;
+}
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+.btn {
+      width: 100%;
+      padding: 15px;
+      text-transform: uppercase;
+      border: none;
+      margin-top: 60px;
+}
+
+/*SUBMIT button style*/
+input[type="submit"]{
+                     width: 100%;
+                     padding: 15px;
+                     margin-top: 60px;
+                     font-weight: bold;
+                     text-transform: uppercase;
+                     border: none;
+                     box-shadow:  0px 4px 6px 0px rgba(0,0,0,0.2);
+                     background-color: #f2f2f2;
+}
+
+input[type="submit"]:hover {
+                           background-color: #e4e4e4;
+}
+
+/*
+  ========================================
+  Logo
+  ========================================
+*/
+img {
+      width: 150px;
+      height: 150px;
+}
+
+img.secondary-logo {
+                 width: 100px;
+                 height: 100px;
+
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+a {
+   text-decoration: none;
+   color: #fff;
+}
+
+a:hover {
+         color: #A3FF15;
+}
+
+.currentLink {
+              color: #A3FF15;
+}
+
+.email {
+        color: red;
+}
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+.primary-header {
+                 display: flex;
+                 height: 100vh;
+                 width: 100%;
+                 flex-flow: column wrap;
+                 align-items: center;
+                 background-image: url(img/football-606235_1280.jpg);
+                 background-repeat: no-repeat;
+                 background-size: cover;
+}
+
+.header-item {
+              margin-top: 30px;
+}
+
+.header-title {
+               margin-top: 15%;
+               margin-left: 15%;
+}
+
+/*
+  ========================================
+  Secondary Header
+  ========================================
+*/
+.secondary-header {
+                  display: flex;
+                  width: 100%;
+                  flex-flow: column wrap;
+                  align-items: center;
+                  background-color: #2f2f2f;
+                  background-image: linear-gradient(315deg, #585858 0%, #2f2f2f 74%);
+                  justify-content: center;
+                  padding-right: 100px;
+}
+
+nav.secondary-nav {
+                   background-color: #2F2F2F;
+                   background-image: linear-gradient(315deg, #585858 0%, #2f2f2f 74%);
+                   box-shadow: none;
+                   border-top: .5px solid #fff;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+.footer {
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        background-color: #2f2f2f;
+        background-image: linear-gradient(315deg, #585858 0%, #2f2f2f 74%);
+        padding: 30px;
+}
+
+/*
+  ========================================
+  Navigation Bar - Home
+  ========================================
+*/
+.header-nav {
+             background-color: rgba(0,0,0, .7);
+             display: inline-block;
+             clear: both;
+             box-shadow: 2px 2px 2px #000;
+}
+
+.nav-item {
+          float: left;
+          padding: 20px 30px 20px 30px;
+          text-transform: uppercase;
+          list-style: none;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+.home-container {
+                 height: 100vh;
+                 display: flex;
+                 align-items: flex-start;
+                 justify-content: space-around;
+}
+
+.event-container {
+                 background-color: #fff;
+                 border: 2px solid #a3ff15;
+                 margin-top: 80px;
+                 padding: 30px;
+                 box-shadow: 8px 8px 8px #2f2f2f;
+                 width: 380px;
+                 height: 450px;
+}
+
+/*
+  ========================================
+  About
+  ========================================
+*/
+.div-container {
+                display: flex;
+                flex-flow: row wrap;
+                margin: 50px 0 50px 0;
+}
+
+.div-square {
+             width: 50%;
+             height: 300px;
+}
+
+.empty-div {
+            background-image: linear-gradient(315deg, #bbdbbe 0%, #b5ff44 74%);;
+}
+
+.div-image {
+           width: 100%;
+           height: auto;
+}
+
+.about-text {
+             padding: 25px;
+             line-height: 22px;
+}
+
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+.contact-body {
+              background-image: url('img/corner-ball.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+}
+
+.contact-container {
+                    height: 100vh;
+                    width: 980px;
+}
+
+.contact-text {
+               width: 400px;
+               height: 200px;
+               box-shadow: 4px 4px 4px #000;
+               text-align: center;
+               padding-top: 60px;
+               background-color: #fff;
+               color: #000;
+               margin-top: 100px;
+               float: left;
+               background-image: linear-gradient(315deg, #bbdbbe 0%, #b5ff44 74%);
+}
+
+.contact-h2 {
+            color: #fff;
+}
+/*
+  ========================================
+  Game Info
+  ========================================
+*/
+.game-container {
+                 display: flex;
+                 flex-flow: row wrap;
+                 justify-content: center;
+                 align-items: flex-start;
+
+}
+
+.game-headings {
+                text-align: center;
+}
+
+.game-headings h2 {
+                  padding-bottom: 30px;
+}
+
+.sub-heading {
+              font-style: oblique;
+              text-align: right;
+}
+
+.add-info p {
+             text-align: center;
+             margin: 40px 0 40px 0;
+}
+
+/*
+  ========================================
+  Tables
+  ========================================
+*/
+.table {
+        border-collapse: separate;
+        border-spacing: 20px 15px;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 40px;
+}
+
+.table th {
+           background-color: #f2f2f2;
+           box-shadow:  0px 4px 6px 0px rgba(0,0,0,0.2);
+           padding: 10px 5px 10px 5px;
+           font-weight: bold;
+}
+
+.game-locations-table td {
+                          vertical-align: middle;
+                          border-bottom: 1px solid #D9D9D9;
+                          padding: 30px;
+}
+
+/*
+  ========================================
+  Rules & Policies
+  ========================================
+*/
+.rule-body {
+            background-image: linear-gradient(315deg, #bbdbbe 0%, #b5ff44 74%);
+}
+
+.rule-container {
+                 width: 90%;
+                 background-color: #fff;
+                 margin-top: -80px;
+                 padding: 0 80px 60px 80px;
+}
+
+.rule-container h2 {
+                    text-align: right;
+                    padding-top: 70px;
+}
+
+.rule {
+       display: inline-block;
+       padding-bottom: 30px;
+}
+
+.rule ul, ol li {
+                 margin-left: 30px; /*all the elements inside a list get 30px margin from their own container*/
+                 line-height: 25px;
+}
+
+.fifa-regulations {
+                  margin-bottom: 30px;
+}
+
+/*
+  ========================================
+  Registration Page
+  ========================================
+*/
+.form-container {
+                margin-top: 30px;
+                margin-bottom: 40px;
+                padding: 60px;
+                border: 0.5px solid #000;
+                border-radius: 10px;
+                box-shadow:  0px 4px 6px 4px rgba(0,0,0,0.2);
+}
+
+label {
+       line-height: 40px;
+       font-weight: bold;
+}
+
+input {
+       border: none;
+       border-bottom: 0.6px solid #000;
+       display: inline-block;
+}
+
+input[type=text],
+[type=data],
+[type=email],
+[type=tel]     {
+                width: 30%;
+}
+
+.personal-info {
+                margin-bottom: 40px;
+}
+
+.buttons-table {
+                text-align: left;
+}
+
+.reg-text {
+          width: 90%;
+          line-height: 22px;
+          text-align: justify;
+
+}
+
+/*
+  ========================================
+  Feedback - show_data
+  ========================================
+*/
+.feedback-body {
+                background-color: #deebdd;
+                background-image: linear-gradient(315deg, #bbdbbe 0%, #b5ff44 74%);
+}
+
+.feedback-table-container {
+                           margin-top: 40px;
+                           background-color: #fff;
+                           display: flex;
+                           flex-flow: row wrap;
+                           justify-content: center;
+                           background-image: linear-gradient(315deg, #bbdbbe 0%, #b5ff44 74%);
+}
+
+.feedback-table-container td {
+                               background-color: #fff;
+                               padding: 20px;
+                               box-shadow:  0px 4px 6px 0px rgba(0,0,0,0.2);
+                               text-transform: capitalize;
+}
+
+th.feedback-th {
+                background-color: #e8e8e8;
+                padding: 20px;
+                text-transform: uppercase;
+}
